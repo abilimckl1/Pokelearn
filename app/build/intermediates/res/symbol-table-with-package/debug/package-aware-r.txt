@@ -765,12 +765,14 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_question
 drawable ic_sum
+drawable ic_trending_flat_black_
 drawable itembox
 drawable jupiter
 drawable key
 drawable kite
 drawable knife
 drawable lion
+drawable main_bg
 drawable mars
 drawable mercury
 drawable mole
