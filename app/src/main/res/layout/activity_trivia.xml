@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/backgroundclose" />
+
+    <ImageView
+        android:id="@+id/background_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/backgroundclose"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/triviaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:gravity="center"
+        android:text="Trivia"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreBehavioral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/triviaQuestion"
+        android:layout_width="488dp"
+        android:layout_height="145dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <Button
+        android:id="@+id/buttonAns1"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triviaQuestion"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <Button
+        android:id="@+id/buttonAns2"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background_one"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triviaQuestion"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <Button
+        android:id="@+id/buttonAns3"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAns1"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <Button
+        android:id="@+id/buttonAns4"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAns2"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textCurrentSpree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:rotation="-30"
+        android:text="Good luck!"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/triviaQuestion"
+        app:layout_constraintEnd_toEndOf="@+id/triviaQuestion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/triviaQuestion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

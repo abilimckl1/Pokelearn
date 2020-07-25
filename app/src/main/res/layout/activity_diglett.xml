@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diglett"
+    android:background="@drawable/grass">
+
+    <ImageView
+        android:id="@+id/hole1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plank" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/arbutus"
+        android:text="30 + 30"
+        android:textColor="#D2691E"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="15"
+        android:textColor="	#8B4513"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hole1"
+        app:layout_constraintEnd_toEndOf="@+id/hole1"
+        app:layout_constraintStart_toStartOf="@+id/hole1" />
+
+
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="15"
+        android:textColor="	#8B4513"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hole2"
+        app:layout_constraintEnd_toEndOf="@+id/hole2"
+        app:layout_constraintStart_toStartOf="@+id/hole2" />
+
+    <TextView
+        android:id="@+id/value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="15"
+        android:textColor="	#8B4513"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hole3"
+        app:layout_constraintEnd_toEndOf="@+id/hole3"
+        app:layout_constraintStart_toStartOf="@+id/hole3" />
+
+    <TextView
+        android:id="@+id/value4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="✓"
+        android:textColor="	#8B4513"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hole4"
+        app:layout_constraintEnd_toEndOf="@+id/hole4"
+        app:layout_constraintStart_toStartOf="@+id/hole4" />
+
+    <ImageView
+        android:id="@+id/iv_score"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/plank" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/arbutus"
+        android:text="Score"
+        android:textColor="#8B4513"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_score"
+        app:layout_constraintStart_toStartOf="@+id/iv_score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arbutus"
+        android:text="0"
+        android:textColor="#D2691E"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_score"
+        app:layout_constraintStart_toStartOf="@+id/iv_score"
+        app:layout_constraintTop_toTopOf="@+id/iv_score" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backspace"
+        android:onClick="back_clicked"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

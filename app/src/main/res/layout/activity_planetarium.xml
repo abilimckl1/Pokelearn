@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/deoxybackground"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/background_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/deoxybackground"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageSun"
+        android:layout_width="113dp"
+        android:layout_height="462dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_one"
+        app:srcCompat="@drawable/sun" />
+
+    <LinearLayout
+        android:id="@+id/linearMercury"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463">
+
+        <ImageView
+            android:id="@+id/imageMercury"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            app:srcCompat="@drawable/mercury" />
+
+        <TextView
+            android:id="@+id/targetMercury"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="12.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearVenus"
+        android:layout_width="57dp"
+        android:layout_height="77dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407">
+
+        <TextView
+            android:id="@+id/targetVenus"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:drawable/editbox_background"
+            android:textAlignment="center"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageVenus"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/venus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEarth"
+        android:layout_width="58dp"
+        android:layout_height="78dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <ImageView
+            android:id="@+id/imageEarth"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            app:srcCompat="@drawable/earth" />
+
+        <TextView
+            android:id="@+id/targetEarth"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearMars"
+        android:layout_width="52dp"
+        android:layout_height="82dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413">
+
+        <TextView
+            android:id="@+id/targetMars"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageMars"
+            android:layout_width="51dp"
+            android:layout_height="17dp"
+            app:srcCompat="@drawable/mars" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearJupiter"
+        android:layout_width="114dp"
+        android:layout_height="144dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003">
+
+        <ImageView
+            android:id="@+id/imageJupiter"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            app:srcCompat="@drawable/jupiter" />
+
+        <TextView
+            android:id="@+id/targetJupiter"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSaturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28">
+
+        <TextView
+            android:id="@+id/targetSaturn"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageSaturn"
+            android:layout_width="143dp"
+            android:layout_height="149dp"
+            app:srcCompat="@drawable/saturn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUranus"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445">
+
+        <ImageView
+            android:id="@+id/imageUranus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/uranus" />
+
+        <TextView
+            android:id="@+id/targetUranus"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearNeptune"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background_one"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317">
+
+        <TextView
+            android:id="@+id/targetNeptune"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageNeptune"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:srcCompat="@drawable/neptune" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textNeptune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neptune"
+        android:textSize="14dp"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <TextView
+        android:id="@+id/textMars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mars"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/textVenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venus"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/textEarth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earth"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_one"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <TextView
+        android:id="@+id/textJupiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jupiter"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/textUranus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uranus"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <TextView
+        android:id="@+id/textMercury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mercury"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/textSaturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturn"
+        android:textColor="@color/fontColorMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

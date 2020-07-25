@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="64dp"
+    android:layout_height="95dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card_layout_easyflipview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="false"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipFrom="right"
+        app:flipType="horizontal"
+        app:autoFlipBack="false"
+        >
+
+        <TextView
+            android:id="@+id/card_layout_back"
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:text="12"
+            android:textSize="35sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/card"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/card_layout_front"
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:src="@drawable/card"
+            />
+
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</RelativeLayout>

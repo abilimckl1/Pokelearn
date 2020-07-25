@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack66">#77ffffff</color>
+    <color name="colorTransparent">#43000000</color>
+    <color name="colorTawny">#c08a43</color>
+    <color name="colorTawnyDark">#8c5725</color>
+    <color name="colorTawnyDarker">#8D510C</color>
+    <color name="fontColorMain">#fff</color>
+    <color name="fontColorPlanetTitle">#ffff00</color>
+    <color name="colorHighlightSemi">#8BFFFFFF</color>
+    <color name="fontColorPlanetTitleBackground">#E5565656</color>
+</resources>

@@ -1,0 +1,161 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ntec.flipmath"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:5:5-44:19
+12        android:allowBackup="true"
+12-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\Mackhem\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.AppCompat.NoActionBar" >
+20-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:11:9-59
+21        <activity android:name="com.ntec.pokelearn.Diglett" />
+21-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:12:9-62
+21-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:12:19-60
+22        <activity android:name="com.ntec.pokelearn.MrMime" />
+22-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:13:9-62
+22-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:13:19-59
+23        <activity android:name="com.ntec.pokelearn.FlipMathActivity" />
+23-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:14:9-72
+23-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:14:19-69
+24        <activity
+24-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:15:9-136
+25            android:name="com.ntec.pokelearn.ActivityMainMenuDeoxys"
+25-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:15:19-75
+26            android:screenOrientation="sensorLandscape" />
+26-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:15:81-124
+27        <activity
+27-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:16:9-136
+28            android:name="com.ntec.pokelearn.ActivityPlanetarium"
+28-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:16:19-72
+29            android:screenOrientation="sensorLandscape" />
+29-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:16:81-124
+30        <activity
+30-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:17:9-136
+31            android:name="com.ntec.pokelearn.ActivityMercury"
+31-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:17:19-68
+32            android:screenOrientation="sensorLandscape" />
+32-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:17:81-124
+33        <activity
+33-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:18:9-136
+34            android:name="com.ntec.pokelearn.ActivityVenus"
+34-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:18:19-66
+35            android:screenOrientation="sensorLandscape" />
+35-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:18:81-124
+36        <activity
+36-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:19:9-136
+37            android:name="com.ntec.pokelearn.ActivityEarth"
+37-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:19:19-66
+38            android:screenOrientation="sensorLandscape" />
+38-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:19:81-124
+39        <activity
+39-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:20:9-136
+40            android:name="com.ntec.pokelearn.ActivityMars"
+40-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:20:19-65
+41            android:screenOrientation="sensorLandscape" />
+41-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:20:81-124
+42        <activity
+42-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:21:9-136
+43            android:name="com.ntec.pokelearn.ActivityJupiter"
+43-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:21:19-68
+44            android:screenOrientation="sensorLandscape" />
+44-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:21:81-124
+45        <activity
+45-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:22:9-136
+46            android:name="com.ntec.pokelearn.ActivitySaturn"
+46-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:22:19-67
+47            android:screenOrientation="sensorLandscape" />
+47-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:22:81-124
+48        <activity
+48-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:23:9-136
+49            android:name="com.ntec.pokelearn.ActivityUranus"
+49-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:23:19-67
+50            android:screenOrientation="sensorLandscape" />
+50-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:23:81-124
+51        <activity
+51-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:24:9-136
+52            android:name="com.ntec.pokelearn.ActivityNeptune"
+52-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:24:19-68
+53            android:screenOrientation="sensorLandscape" />
+53-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:24:81-124
+54        <activity
+54-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:25:9-136
+55            android:name="com.ntec.pokelearn.ActivitySun"
+55-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:25:19-64
+56            android:screenOrientation="sensorLandscape" />
+56-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:25:81-124
+57        <activity
+57-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:26:9-136
+58            android:name="com.ntec.pokelearn.ActivityTrivia"
+58-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:26:19-67
+59            android:screenOrientation="sensorLandscape" />
+59-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:26:81-124
+60        <activity
+60-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:27:9-136
+61            android:name="com.ntec.pokelearn.ActivityTriviaResult"
+61-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:27:19-73
+62            android:screenOrientation="sensorLandscape" />
+62-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:27:81-124
+63        <activity
+63-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:28:9-136
+64            android:name="com.ntec.pokelearn.ActivityDeoxysEasterEgg"
+64-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:28:19-76
+65            android:screenOrientation="sensorLandscape" />
+65-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:28:81-124
+66        <activity android:name="com.ntec.pokelearn.MainActivity" >
+66-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:29:9-34:20
+66-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:29:19-65
+67            <intent-filter>
+67-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:30:13-33:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:31:17-69
+68-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:31:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:32:17-77
+70-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:32:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.ntec.pokelearn.Electivire" >
+73-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:35:9-40:20
+73-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:35:19-63
+74            <intent-filter>
+74-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:30:13-33:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:31:17-69
+75-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:31:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:32:17-77
+77-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:32:27-74
+78            </intent-filter>
+79        </activity>
+80
+81        <meta-data
+81-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:41:9-43:57
+82            android:name="preloaded_fonts"
+82-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:42:13-43
+83            android:resource="@array/preloaded_fonts" />
+83-->C:\Users\Mackhem\Desktop\gitupload\Pokelearn\Pokelearn\app\src\main\AndroidManifest.xml:43:13-54
+84    </application>
+85
+86</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/backgroundclose" />
+
+    <ImageView
+        android:id="@+id/background_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/backgroundclose"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/triviaTitle"
+        android:layout_width="90dp"
+        android:layout_height="62dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:gravity="center"
+        android:text="Score"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/btnLeavegame"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:onClick="checkAnswer"
+        android:text="Leave"
+        android:textColor="@color/fontColorMain"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Score: 6969"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeavegame"
+        app:layout_constraintEnd_toEndOf="@+id/background_one"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/background_one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="You've got 15/15"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/imageBehavior"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/highestSpreeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Highest Spree: 11"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/imageBehavior"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/behaviorScore"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="@color/fontColorPlanetTitleBackground"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:paddingLeft="10dp"
+        android:text="Congrats! You have the intelligence of Einstein!"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageBehavior"
+        app:layout_constraintEnd_toEndOf="@+id/imageBehavior"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageBehavior"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resultLabel2"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@android:color/holo_blue_bright"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textEaster"
+        android:layout_width="146dp"
+        android:layout_height="250dp"
+        android:background="@color/colorHighlightSemi"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="You found the Easter Egg Question!!"
+        android:textAlignment="textEnd"
+        android:textColor="@color/fontColorPlanetTitle"
+        android:textSize="35dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLeavegame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/highestSpreeLabel"
+        app:layout_constraintTop_toTopOf="@+id/resultLabel"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <Button
+            android:id="@+id/btnRewardEasterEgg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reward"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/textEaster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="@+id/textEaster"
+            app:layout_constraintTop_toTopOf="@+id/textEaster"
+            app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

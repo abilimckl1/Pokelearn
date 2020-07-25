@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/pop_bg"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_width="475dp"
+    android:layout_height="350dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruction"
+        android:textSize="27dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="466dp"
+        android:layout_height="253dp"
+        android:text="1. In the selection box, there is only 1 conductor and 4 insulators.
+        \n2. If the selected item is conductor, the light bulb will lights on and marks will be given.
+        \n3. Press the item on the circuit board will display some explanation on the selected item about its conductivity.
+        \n4. Press the refresh button to get new set of items.
+        \n\nP/S: Press anywhere out of the instruction box to continue..."
+
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.456" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
