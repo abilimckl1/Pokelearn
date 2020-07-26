@@ -78,8 +78,8 @@ public class FlipMathActivity extends AppCompatActivity {
         mALCardNum             = new ArrayList<>(Arrays.asList(arr));
         randAns                = new Random();
         mPreferencesCollection = new SharedPreferencesCollection(this);
-        correctSound = MediaPlayer.create(FlipMathActivity.this,R.raw.correct_sound);
-        falseSound = MediaPlayer.create(FlipMathActivity.this,R.raw.wrong_sound);
+        correctSound = MediaPlayer.create(FlipMathActivity.this,R.raw.pickupgold_sound);
+        falseSound = MediaPlayer.create(FlipMathActivity.this,R.raw.invulnerable);
 
         //Receive from adapter
         LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
@@ -290,11 +290,8 @@ public class FlipMathActivity extends AppCompatActivity {
 
     //check whether time is running
     public void startStop(){
-        if(mTimerRunning) {
-            stopTimer();
-        } else {
-            startTimer();
-        }
+        if(mTimerRunning) { stopTimer(); }
+        else { startTimer(); }
     }
 
     //update the timer
