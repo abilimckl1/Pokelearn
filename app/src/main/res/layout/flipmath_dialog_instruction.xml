@@ -32,29 +32,22 @@
             android:gravity="center"
             android:background="@drawable/cercle_background"
             android:layout_alignParentEnd="true"/>
-
-
-
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. Flip up two face down card and sum it together to get the answer shown below.
+            android:text="1. Flip up two face down card and sum it together to get the answer shown.
                           \n\n2. If both card that sum together doesn't match the answer, please flip back the card to continue the game.
                           \n\n3. If both card that sum together match the answer, the score will be show at the top left and new answer will be show when the card is flip back.
-                          \n\n4. At the bottom right, there will be image that shows that whether the equation is correct.
+                          \n\n4. There will be an icon (?) that shows that whether the equation is correct.
                           \n\n5. Lastly, when the timer count down to zero, it means the game is over."
             android:textColor="@android:color/white"
             android:layout_margin="10dp"
             android:textSize="18sp"/>
-
     </LinearLayout>
-
-
 </LinearLayout>

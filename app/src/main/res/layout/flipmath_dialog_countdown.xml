@@ -5,7 +5,6 @@
     android:background="@color/colorTransparent"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +14,6 @@
             android:id="@+id/flipmath_dialog_countdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
@@ -24,8 +22,7 @@
             android:text="3"
             android:textColor="#fff"
             android:textStyle="bold"
-            android:textSize="200sp" />
-
+            android:textSize="190sp" />
 
     </LinearLayout>
 
