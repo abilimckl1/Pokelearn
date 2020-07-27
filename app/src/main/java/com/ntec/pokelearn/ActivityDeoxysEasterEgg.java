@@ -16,12 +16,13 @@ public class ActivityDeoxysEasterEgg extends AppCompatActivity {
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
     }
-
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deoxys_easteregg);
 
+		//set background moving animation
         final ImageView backgroundOne = (ImageView) findViewById(R.id.background_one);
         final ImageView backgroundTwo = (ImageView) findViewById(R.id.background_two);
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
@@ -40,9 +41,8 @@ public class ActivityDeoxysEasterEgg extends AppCompatActivity {
         });
         animator.start();
 
-
+		//implements back button icon to bring user back to previous layout
         imageBack2Main = findViewById(R.id.imageBackMain);
-
         imageBack2Main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

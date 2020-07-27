@@ -41,6 +41,7 @@ public class ActivityTrivia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia);
 
+		//set background moving animation
         final ImageView backgroundOne = (ImageView) findViewById(R.id.background_one);
         final ImageView backgroundTwo = (ImageView) findViewById(R.id.background_two);
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
@@ -59,6 +60,7 @@ public class ActivityTrivia extends AppCompatActivity {
         });
         animator.start();
 
+		//setting view buttons to variables
         countLabel = findViewById(R.id.triviaTitle);
         mQuizText = findViewById(R.id.triviaQuestion);
         answerBtn1 = findViewById(R.id.buttonAns1);
@@ -66,6 +68,7 @@ public class ActivityTrivia extends AppCompatActivity {
         answerBtn3 = findViewById(R.id.buttonAns3);
         answerBtn4 = findViewById(R.id.buttonAns4);
 
+		//implements a temporary array to store the questions and its multiple choice to be displayed in the game
         for(int i = 0; i < quizData.length; i++){
             ArrayList<String> tmpArray = new ArrayList<>();
             tmpArray.add(quizData[i][0]);
@@ -80,6 +83,7 @@ public class ActivityTrivia extends AppCompatActivity {
         showNextQuiz();
     }
 
+	//make sure that the back button does ask permission before leaving the game half way
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
@@ -94,23 +98,26 @@ public class ActivityTrivia extends AppCompatActivity {
                 .show();
     }
 
+	
     public void showNextQuiz(){
         countLabel.setText("Trivia " + quizCount);
 
         Random random = new Random();
+		//shuffle the position of question multiple choices in the temporary array
         int randomNum = random.nextInt(quizArray.size());
 
         ArrayList<String> quiz = quizArray.get(randomNum);
 
-        //Set question and right answer
-        //Array format -> {"Q", "Right", "Choice1", "Choice2", "Choice3"}
+        //set question and right answer
+        //array format -> {"Q", "Right", "Choice1", "Choice2", "Choice3"}
         mQuizText.setText(quiz.get(0));
         rightAnswer = quiz.get(1);
 
-        //Remove "Q" from quiz and shuffle choices
+        //remove "Q" from quiz and shuffle choices
         quiz.remove(0);
         Collections.shuffle(quiz);
 
+		//set the button to the question choices after shuffled
         answerBtn1.setText(quiz.get(0));
         answerBtn2.setText(quiz.get(1));
         answerBtn3.setText(quiz.get(2));
@@ -128,7 +135,7 @@ public class ActivityTrivia extends AppCompatActivity {
         TextView currentSpree = findViewById(R.id.textCurrentSpree);
 
 
-
+		//check every question's right and wrong answer
         if (answerBtn1.getText().toString().equals(rightAnswer))
             rightChoice = answerBtn1;
         else if (answerBtn2.getText().toString().equals(rightAnswer))
@@ -138,29 +145,55 @@ public class ActivityTrivia extends AppCompatActivity {
         else
             rightChoice = answerBtn4;
 
-
+		
+		//check if player has answered 10 trivia question
+		//if yes then game ends, else game continues with showing next trivia question
         if (quizCount != QUIZ_COUNT) {
+			
+			//checks if player has selected the right answer
             if (btnSelectedText.equals(rightAnswer)) {
                 spreeCount++;
-                if(spreeCount>highestSpreeCount)
-                    highestSpreeCount = spreeCount;
-                if(triviaQuestionString.contains("EASTER EGG: "))
-                    foundEaster = true;
                 rightAnswerCount++;
+				//checks if player current spree is higher than the highest spree
+				//assign current spree value to highest if yes
+                if(spreeCount>highestSpreeCount) 
+                    highestSpreeCount = spreeCount;
+				
+				//checks if player current game contained easter egg question
+				//if yes set value of foundEaster to 1
+                if(triviaQuestionString.contains("EASTER EGG: ")) 
+                    foundEaster = true;
+				
+				//implements the scoring system
                 scoreWeight = scoreWeight + 1.5;
                 score = score + 10 + (1*scoreWeight);
+				
+				//set the current spree text
                 currentSpree.setText(triviaSpree(spreeCount));
+				
+				//the right answer button will be highlighted green
                 btnSelected.setTextColor(Color.parseColor("#90EE90"));
+				
+				//play the correct sound
                 MediaPlayer correctSound = MediaPlayer.create(ActivityTrivia.this, R.raw.pickupgold_sound);
                 correctSound.start();
             }
 
             else {
+				//reset the spree count to 0
                 spreeCount= 0;
+				
+				//decrease the scoreWeight by 0.5
                 scoreWeight = scoreWeight - 0.5;
+				
+				//set current spree text to 0
                 currentSpree.setText(triviaSpree(spreeCount));
+				
+				//the right answer button will be highlighted green and selected wrong answer red
                 btnSelected.setTextColor(Color.parseColor("#FF0000"));
                 rightChoice.setTextColor(Color.parseColor("#90EE90"));
+				
+				//play the wrong sound
                 MediaPlayer wrongSound = MediaPlayer.create(ActivityTrivia.this, R.raw.invulnerable);
                 wrongSound.start();
             }
@@ -170,11 +203,11 @@ public class ActivityTrivia extends AppCompatActivity {
         else {
             if (btnSelectedText.equals(rightAnswer)) {
                 spreeCount++;
+                rightAnswerCount++;
                 if(spreeCount>highestSpreeCount)
                     highestSpreeCount = spreeCount;
                 if(triviaQuestionString.contains("EASTER EGG: "))
                     foundEaster = true;
-                rightAnswerCount++;
                 btnSelected.setTextColor(Color.parseColor("#90EE90"));
                 scoreWeight = scoreWeight + 1.5;
                 score = score + 10 + (1*scoreWeight);
@@ -191,10 +224,14 @@ public class ActivityTrivia extends AppCompatActivity {
                 MediaPlayer wrongSound = MediaPlayer.create(ActivityTrivia.this, R.raw.invulnerable);
                 wrongSound.start();
             }
+			
+			//prevent button to be pressed when game ends 
             answerBtn1.setClickable(false);
             answerBtn2.setClickable(false);
             answerBtn3.setClickable(false);
             answerBtn4.setClickable(false);
+			
+			//delay showing the result layout when game ends to show player the right and wrong answer
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -209,6 +246,8 @@ public class ActivityTrivia extends AppCompatActivity {
         }
     }
 
+	//method to delay showing the next trivia question
+	//set the button to unclickable every question answered and back to clickable again after showing next question
     public void buttonFreeze(){
         answerBtn1.setClickable(false);
         answerBtn2.setClickable(false);
@@ -230,6 +269,7 @@ public class ActivityTrivia extends AppCompatActivity {
         }, 2000);
     }
 
+	//implement the spree text to be displayed based on the player's current spree
     public String triviaSpree(int i){
         String[] spree = new String[14];
 
@@ -251,6 +291,7 @@ public class ActivityTrivia extends AppCompatActivity {
         return spree[i];
     }
 
+	//implements a question pool
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     private String quizData[][] = {
             //{"Q","Right Answer", "Choice1", "Choice2", "Choice3"}

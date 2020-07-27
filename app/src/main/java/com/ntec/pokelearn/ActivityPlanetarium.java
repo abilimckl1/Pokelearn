@@ -30,10 +30,10 @@ public class ActivityPlanetarium extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planetarium);
 
-        //set moving background
         final ImageView backgroundOne = (ImageView) findViewById(R.id.background_one);
         final ImageView backgroundTwo = (ImageView) findViewById(R.id.background_two);
 
+        //set moving background
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
         animator.setRepeatCount(ValueAnimator.INFINITE);
         animator.setInterpolator(new LinearInterpolator());

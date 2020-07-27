@@ -19,7 +19,9 @@ public class ActivityTriviaResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_result);
-        final ImageView backgroundOne = (ImageView) findViewById(R.id.background_one);
+       
+		//set the background animation
+		final ImageView backgroundOne = (ImageView) findViewById(R.id.background_one);
         final ImageView backgroundTwo = (ImageView) findViewById(R.id.background_two);
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
         animator.setRepeatCount(ValueAnimator.INFINITE);
@@ -46,15 +48,18 @@ public class ActivityTriviaResult extends AppCompatActivity {
         Button btnLeaveGame = findViewById(R.id.btnLeavegame);
         Button btnRewardEasterEgg = findViewById(R.id.btnRewardEasterEgg);
 
+		//retrieve the data needed from ActivityTrivia.class to be used
         int gameRightAnswerCount = getIntent().getIntExtra("GAME_RIGHT_ANSWER_COUNT", 0);
         int gameHighestSpree = getIntent().getIntExtra("GAME_HIGHEST_SPREE", 0);
         boolean gameFoundEasterEgg = getIntent().getBooleanExtra("GAME_FOUND_EASTER_EGG", false);
         Double gameScore = getIntent().getDoubleExtra("GAME_SCORE", 0);
 
+		//setting the display text accordingly to the data retrieved
         resultLabel.setText("You've got " + gameRightAnswerCount + "/10 !");
         totalScoreLabel.setText("Score: " + Math.round(gameScore));
         highestSpreeLabel.setText("Highest Spree: " + gameHighestSpree);
 
+		//determines player's behavior score based on the final score
         if(Math.round(gameScore) < 30){
             imageBehavior.setImageResource(R.drawable.caveman);
             behaviorScore.setText("Your intelligence is equivalent to a caveman");
@@ -80,6 +85,8 @@ public class ActivityTriviaResult extends AppCompatActivity {
             behaviorScore.setText("Congrats! Your intelligence is equivalent to Einstein's!");
         }
 
+		//check if easter egg trivia question were present in the game
+		//if yes then show easter egg rewards at the end of the game
         if(gameFoundEasterEgg){
             easterEggLabel.setVisibility(View.VISIBLE);
             btnRewardEasterEgg.setVisibility(View.VISIBLE);
@@ -91,6 +98,7 @@ public class ActivityTriviaResult extends AppCompatActivity {
             btnRewardEasterEgg.setClickable(true);
         }
 
+		//set the reward button to bring player to the reward layout
         btnRewardEasterEgg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,6 +106,7 @@ public class ActivityTriviaResult extends AppCompatActivity {
             }
         });
 
+		//set the leave button to bring user to the deoxys main menu
         btnLeaveGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,6 +116,7 @@ public class ActivityTriviaResult extends AppCompatActivity {
         });
     }
 
+	//make sure back button doesnt redirect player back to the previous layout
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
