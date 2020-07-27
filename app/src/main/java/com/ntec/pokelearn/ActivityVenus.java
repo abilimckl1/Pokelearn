@@ -49,6 +49,7 @@ public class ActivityVenus extends AppCompatActivity {
         animator.start();
 
         mFactText = findViewById(R.id.textViewFact);
+		//implements next button to show the next fact
         mNextButton = findViewById(R.id.buttonNext);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,7 @@ public class ActivityVenus extends AppCompatActivity {
             }
         });
 
+		//implements previous button to go back to the last fact
         mPreviousButton = findViewById(R.id.buttonPrevious);
         mPreviousButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +86,7 @@ public class ActivityVenus extends AppCompatActivity {
         });
     }
 
+	//implements an arraylist to store the facts
     private Fact[] mFact = new Fact[]{
             new Fact(R.string.venusFact1),
             new Fact(R.string.venusFact2),
